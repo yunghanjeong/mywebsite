@@ -15,6 +15,10 @@ app = Flask(__name__)
 def home(): # home page
     return render_template("index.html", content="Testing")
 
+@app.route("/about/")
+def about(): # home page
+    return redirect(url_for("about")) #render_template("base.html", content="Testing")
+
 # @app.route("/<name>")
 # def user(name): # home page
 #     return f"hello {name}"
