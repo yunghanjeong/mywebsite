@@ -17,7 +17,7 @@ def home(): # home page
 
 @app.route("/about/")
 def about(): # home page
-    return redirect(url_for("about")) #render_template("base.html", content="Testing")
+    return  render_template("base.html", content="Testing")
 
 # @app.route("/<name>")
 # def user(name): # home page
